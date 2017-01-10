@@ -10,7 +10,6 @@
 
     <name>jaxws-cxf-helloworld-example</name>
     <description>CXF - SOAP Web Service Consumer &amp; Provider WSDL Example</description>
-    <url>http://www.source4code.info/2016/10/cxf-soap-web-service-consumer-provider-wsdl-example.html</url>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

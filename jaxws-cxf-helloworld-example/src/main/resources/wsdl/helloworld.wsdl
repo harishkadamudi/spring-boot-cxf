@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <wsdl:definitions name="HelloWorld"
 
-	targetNamespace="http://codenotfound.com/services/helloworld"
-	xmlns:tns="http://codenotfound.com/services/helloworld" xmlns:types="http://codenotfound.com/types/helloworld"
+	targetNamespace="com.techypark.wordpress.com/services/helloworld"
+	xmlns:tns="com.techypark.wordpress.com/services/helloworld" xmlns:types="com.techypark.wordpress.com/types/helloworld"
 	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 
 	<wsdl:types>
-		<xsd:schema targetNamespace="http://codenotfound.com/types/helloworld"
+		<xsd:schema targetNamespace="com.techypark.wordpress.com/types/helloworld"
 			xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
 			attributeFormDefault="unqualified" version="1.0">
 
@@ -49,7 +49,7 @@
 			transport="http://schemas.xmlsoap.org/soap/http" />
 		<wsdl:operation name="sayHello">
 			<soap:operation
-				soapAction="http://codenotfound.com/services/helloworld/sayHello" />
+				soapAction="com.techypark.wordpress.com/services/helloworld/sayHello" />
 			<wsdl:input>
 				<soap:body use="literal" />
 			</wsdl:input>
@@ -62,7 +62,7 @@
 	<wsdl:service name="HelloWorld_Service">
 		<wsdl:documentation>Hello World service</wsdl:documentation>
 		<wsdl:port name="HelloWorld_Port" binding="tns:HelloWorld_SoapBinding">
-			<soap:address location="http://localhost:9090/codenotfound/ws/helloworld" />
+			<soap:address location="http://localhost:9090/techypark/ws/helloworld" />
 		</wsdl:port>
 	</wsdl:service>
 
